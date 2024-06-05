@@ -1,0 +1,17 @@
+.orders h1{
+    margin: 30px 0 20px;
+    text-align: center;
+    font-size: 42px;
+}
+
+.orders-container{
+    background-color: #fff;
+    margin: 10px;
+    border-bottom: 2px solid darkgray;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 -2px 4px rgba(0,0,0,0.1),2px 0 4px rgba(0,0,0,0.1), -2px 0 4px rgba(0,0,0,0.1);
+}
+
+.orders-container h2{
+    padding: 10px;
+    padding-bottom: 4px;
+}

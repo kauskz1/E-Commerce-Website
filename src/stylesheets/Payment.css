@@ -1,0 +1,74 @@
+.payment{
+    background-color: white;
+}
+
+.payment-container> h1{
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    background-color: rgb(234,237,237);
+    border-bottom: 1px solid lightgray;
+}
+
+.payment-address form{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 550px;
+}
+.payment-address form label{
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    font-size: 18px;
+}
+.payment-addr-input{
+    width: 400px;
+    height: 26px;
+    margin: 4px 0;
+    margin-left: auto;
+    padding: 0 4px;
+}
+
+.payment-container h1 a{
+    color: -webkit-link;
+}
+
+.payment-section{
+    display: flex;
+    padding: 20px;
+    margin: 0 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.payment-title{
+    flex: 0.2;
+}
+
+.payment-address, .payment-items, .payment-details{
+    flex: 0.8;
+}
+
+.payment-total{
+    margin: 10px 0;
+}
+
+.payment-btn{
+    background-color: #f0e54b;
+    width: 320px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.payment-btn:hover{
+    background-color: #d8cd37;
+}
+.payment-btn-disabled{
+    background-color: lightgray;
+    cursor:not-allowed;
+}
+.payment-btn-disabled:hover{
+    background-color: rgb(178, 175, 175);
+}

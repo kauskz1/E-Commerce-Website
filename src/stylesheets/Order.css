@@ -1,0 +1,33 @@
+.order{
+    padding: 10px 10px;
+    border: 1px solid darkgray;
+    border-collapse: collapse;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.order h2{
+    text-decoration: underline;
+    margin-bottom: 4px;
+}
+
+.order p{
+    margin: 4px 0;
+}
+
+.order-address-flex{
+    margin: 0 10px;
+    display: inline-flex;
+    flex-direction: column;
+}
+.order-address-flex p{
+    font-size: 16px;
+    margin: 0;
+}
+
+.first{
+    background-color: rgba(141, 237, 62, 0.2);
+    border: 2px solid darkgreen;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
