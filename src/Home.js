@@ -67,14 +67,19 @@ function Home(){
             return <Product key={product.id} {...product} />
         }
     });
+    console.log(filteredProductsArray);
     if(filters.sort==="asc"){
         filteredProductsArray = filteredProductsArray.sort((a,b)=> {
-            return a.props.price-b.props.price
+            let pa = a?a.props.price:0;
+            let pb = b?b.props.price:0;
+            return pa-pb;
         }).map((product)=>product);
     }
     else if(filters.sort==="desc"){
         filteredProductsArray = filteredProductsArray.sort((a,b)=> {
-            return b.props.price-a.props.price
+            let pa = a?a.props.price:0;
+            let pb = b?b.props.price:0;
+            return pb-pa;
         }).map((product)=>product);
     }
     console.log(filteredProductsArray);
@@ -99,7 +104,7 @@ function Home(){
                 </div>
                 <div className="filters-section price">
                     <h2>Max Price:</h2> <span id="price-value"></span>
-                    <input type="range" min="1000" max="50000" step="5000" value={filters.price} className="filters-price-slider" name="price" onInput={handleFilterChange} />
+                    <input type="range" min="0" max="50000" step="5000" value={filters.price} className="filters-price-slider" name="price" onInput={handleFilterChange} />
                 </div>
                 <div className="filters-section rating">
                     <h2>Rating</h2>

@@ -72,7 +72,8 @@ export default function Membership(){
     function Member(){
         return(
             <>
-                <h1>You have React Membership!</h1>
+                <h1>You already have React Membership!</h1>
+                <p>You get these benefits:</p>
                 <Benefits />
                 <img className="membership-img" src={member_img} alt='' />
             </>
